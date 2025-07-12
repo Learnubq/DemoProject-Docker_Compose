@@ -22,7 +22,7 @@ chmod +x ~/.docker/cli-plugins/docker-compose
 ```bash
 cd ~/js-app/app
 docker ps
-docker compose --file docker_compose_mongo.yaml up
+docker compose --file docker_compose_mongo.yaml up -d
 ```
 
 <img width="1858" height="186" alt="image" src="https://github.com/user-attachments/assets/15c1dfdb-26d0-4eac-9b1e-09ab64ba917d" />
@@ -44,5 +44,17 @@ docker ps
 <img width="1847" height="136" alt="image" src="https://github.com/user-attachments/assets/5c9d7a6d-5c98-4577-b037-3a467d0adc9a" />
 
 
+6. **Then started the node .js application:**
 
+```bash
+node server.js
+```
+
+<img width="891" height="52" alt="image" src="https://github.com/user-attachments/assets/2e5a7cff-66a4-4274-84e7-127da3b5c20d" />
+
+**To stop those containers at once
+
+```bash
+docker compose --file docker_compose_mongo.yaml down
+```
 
